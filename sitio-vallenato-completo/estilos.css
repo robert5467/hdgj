@@ -1,0 +1,153 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #d62828;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 5px solid #f77f00;
+}
+
+.galeria {
+  padding: 30px;
+  text-align: center;
+}
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagenes img {
+  width: 250px;
+  height: auto;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contacto {
+  background: #ffe5b4;
+  padding: 30px;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: #d62828;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  .imagenes img {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  form input, form textarea {
+    width: 95%;
+  }
+}
+
+.hover-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.video {
+  padding: 30px;
+  text-align: center;
+  background-color: #f9f1e7;
+}
+
+.video-contenedor {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 20px;
+}
+
+.video-contenedor iframe {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  left: 10%;
+  top: 0;
+  border-radius: 12px;
+}
+
+.testimonios {
+  background-color: #fff4e0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonio {
+  display: none;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.testimonio.activo {
+  display: block;
+}
+
+.idiomas {
+  margin-top: 10px;
+}
+.idiomas button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #ffd000;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pago {
+  padding: 40px 20px;
+  background-color: #fdf0ce;
+  text-align: center;
+}

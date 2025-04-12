@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Parranda Vallenata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 id="titulo">¡Vive el sabor de la parranda!</h1>
+    <p id="subtitulo">Contrata talento vallenato auténtico para tu evento</p>
+    <div class="idiomas">
+      <button onclick="cambiarIdioma('es')">ES</button>
+      <button onclick="cambiarIdioma('en')">EN</button>
+    </div>
+  </header>
+
+  <section class="galeria">
+    <h2 id="galeria">Galería de Agrupaciones</h2>
+    <div class="imagenes">
+      <img src="acordeon-vallenato.jpg" alt="Acordeonero en tarima" class="hover-img">
+      <img src="grupo-vallenato.jpg" alt="Conjunto vallenato tocando" class="hover-img">
+      <img src="parranda-vallenata.jpg" alt="Fiesta con vallenato" class="hover-img">
+    </div>
+  </section>
+
+  <section class="video">
+    <h2 id="videoTitulo">¡Mira cómo suena la fiesta!</h2>
+    <div class="video-contenedor">
+      <iframe src="https://www.youtube.com/embed/q2XK5Pz3WJY"
+              title="Video Vallenato"
+              frameborder="0"
+              allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="testimonios">
+    <h2 id="testimoniosTitulo">Lo que dicen nuestros clientes</h2>
+    <div class="carrusel">
+      <p class="testimonio activo">“Contratamos el grupo para una boda, ¡fue espectacular!” - Laura G.</p>
+      <p class="testimonio">“Puntuales, talentosos y animaron toda la fiesta.” - Andrés M.</p>
+      <p class="testimonio">“Volveré a contratarlos para otro evento, 100% recomendados.” - Catalina R.</p>
+    </div>
+  </section>
+
+  <section class="pago">
+    <h2 id="pagoTitulo">Reserva tu parranda</h2>
+    <div id="paypal-button-container"></div>
+  </section>
+
+  <section class="contacto">
+    <h2 id="contactoTitulo">¡Cotiza tu evento ya!</h2>
+    <form onsubmit="return enviarAWhatsApp(event)">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="email" id="correo" placeholder="Tu correo" required>
+      <textarea id="mensaje" placeholder="Cuéntanos sobre tu evento..." required></textarea>
+      <button type="submit">Enviar a WhatsApp</button>
+    </form>
+  </section>
+
+  <a href="https://wa.me/573001112233" class="whatsapp" target="_blank">Contáctanos por WhatsApp</a>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+</body>
+</html>
